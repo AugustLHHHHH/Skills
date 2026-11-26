@@ -1,0 +1,17 @@
+# Operating-system metadata
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Local environments and credentials
+.env
+.env.*
+.venv/
+__pycache__/
+*.py[cod]
+
+# Personal learning records and generated previews
+private/
+*纠错笔记*
+notebook-preview*.png
+*.ics
