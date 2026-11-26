@@ -1,54 +1,49 @@
 # Skills
 
-A collection of reusable Codex skills.
+Reusable Codex skills.  
+可复用的 Codex Skill 集合。
 
-## Available skills
+## English Expression Coach / 英语表达教练
 
-### English Expression Coach
+Turn Chinese thoughts and imperfect English attempts into natural, reusable expressions for everyday and workplace communication. The skill preserves the original attempt, explains key corrections, and builds a structured learning record.
 
-[English Expression Coach](english-expression-coach/SKILL.md) turns everyday and workplace Chinese-to-English attempts into clear, idiomatic expressions while preserving the user's original wording in a durable learning notebook.
+将中文想法和不够自然的英文表达改写为清晰、地道、可复用的表达；保留原始答案，解释关键修改，并沉淀为结构化学习笔记。
 
-It can:
+### Capabilities / 能力
 
-- Lead with a natural English correction instead of a long grammar lecture.
-- Preserve the Chinese intent and the user's first English attempt.
-- Maintain a Markdown correction notebook with continuous entry numbering.
-- Generate a responsive, self-contained visual notebook with before/after comparisons, correction categories, and revision history.
-- Optionally support a recurring review reminder in the user's own timezone.
+- **Natural correction / 自然改写** — Recommend natural English first, then explain the key changes.  
+  先给出自然表达，再解释关键修改。
+- **Context-aware / 场景适配** — Offer suitable everyday, conversational, or workplace versions.  
+  根据日常、口语或职场场景提供合适版本。
+- **Learning record / 学习记录** — Keep the Chinese intent, first attempt, revisions, and next-time focus.  
+  记录中文意图、首次表达、修订历史和下次练习重点。
+- **Visual notebook / 可视化笔记** — Generate a responsive static page with before/after comparisons and correction categories.  
+  生成响应式静态页面，展示前后对比和错误类别。
+- **Optional review reminder / 可选复习提醒** — Create a recurring review task in the user's own timezone when requested.  
+  需要时按用户所在时区创建周期复习提醒。
 
-The skill uses portable relative paths and does not include personal learning records, screenshots, local reminders, or machine-specific paths.
+The skill uses portable workspace-relative paths and contains no personal learning records, screenshots, reminders, or machine-specific settings.
 
-## Installation
+该 Skill 使用可移植的工作区相对路径，不包含个人学习记录、截图、提醒或特定电脑配置。
 
-Copy the skill folder into your Codex skills directory:
+## Installation / 安装
 
-```text
-$CODEX_HOME/skills/english-expression-coach/
-```
-
-If `CODEX_HOME` is not set, the default is usually:
-
-```text
-~/.codex/skills/english-expression-coach/
-```
-
-The folder should contain:
+Copy `english-expression-coach/` into your Codex skills directory:  
+将 `english-expression-coach/` 复制到 Codex Skills 目录：
 
 ```text
-english-expression-coach/
-└── SKILL.md
+$CODEX_HOME/skills/
 ```
 
-## Usage
+If `CODEX_HOME` is unset, use `~/.codex/skills/`.  
+如果未设置 `CODEX_HOME`，通常使用 `~/.codex/skills/`。
 
-Invoke the skill explicitly:
+## Usage / 使用
 
 ```text
 $english-expression-coach
 ```
 
-Then provide the intended Chinese meaning and your English attempt. The skill guides Codex through the correction, notebook update, and visual page generation workflow.
+Provide the intended Chinese meaning and your English attempt. The skill will correct the expression, explain the important changes, and update the learning notebook when requested.
 
-## Repository scope
-
-This repository should contain reusable skill instructions and sanitized examples only. Keep personal notebooks, private screenshots, credentials, and local configuration outside the public repository.
+提供中文意图和你的英文表达。Skill 会完成纠错、解释关键修改，并在需要时更新学习笔记。
